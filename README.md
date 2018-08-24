@@ -12,7 +12,7 @@
     <img src="https://img.shields.io/badge/Author-一点资讯Android团队-orange.svg?style=flat-square" alt="Author" />
   </a>
   
-    <a href="http://qm.qq.com/cgi-bin/qm/qr?k=W64EsNGAK6aVub49Aj0sLNlXzxb9gSjs">
+  <a href="http://qm.qq.com/cgi-bin/qm/qr?k=W64EsNGAK6aVub49Aj0sLNlXzxb9gSjs">
     <img src="https://img.shields.io/badge/QQ群-685541331-orange.svg?style=flat-square" alt="QQ Group" />
   </a>
 </p>
