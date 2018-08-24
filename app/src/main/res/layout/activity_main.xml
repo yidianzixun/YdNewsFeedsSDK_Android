@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/protal_test"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/btn_circle_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="多tab信息流"
+        android:textColor="@color/common_red_a400" />
+
+    <Button
+        android:id="@+id/list_test"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_circle_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="单列表信息流"
+        android:textColor="@color/common_red_a400" />
+
+    <Button
+        android:id="@+id/view_test"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_circle_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="卡片信息流"
+        android:textColor="@color/common_red_a400" />
+
+    <Button
+        android:id="@+id/video_test"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_circle_bg"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="测试video"
+        android:textColor="@color/common_red_a400"
+        android:visibility="gone"/>
+
+
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomTheme" parent="@style/DefaultTheme">
+
+        <item name="newssdk_common_font_color">#2c2c2c</item>
+        <item name="newssdk_common_bg_color">#fafafa</item>
+        <item name="newssdk_feedback_bg_down">@drawable/feedback_bg_down</item>
+        <item name="newssdk_feedback_bg_up">@drawable/feedback_bg_up</item>
+        <item name="newssdk_feedback_bg">@drawable/feedback_bg</item>
+        <item name="newssdk_sliding_tab_indicator_divider_color">#b8b8b8</item>
+        <item name="newssdk_card_img_bg_color">@color/card_img_bg</item>
+        <item name="newssdk_feedback_textcolor">@drawable/badfeedback_textcolor_state</item>
+        <item name="newssdk_feedback_state">@drawable/badfeedback_state</item>
+        <item name="newssdk_floatingbutton_bg_color">#ffffff</item>
+        <item name="newssdk_card_divider_color">#d8d8d8</item>
+        <item name="newssdk_refresh_tip_bg_color">@drawable/refresh_toast_blue</item>
+        <item name="newssdk_sliding_tab_indicator_color">#DA3838</item>
+        <item name="newssdk_swiperefresh_color">#FF5B5F</item>
+        <item name="newssdk_floatingbutton">@drawable/floating_refresh</item>
+    </style>
+</resources>

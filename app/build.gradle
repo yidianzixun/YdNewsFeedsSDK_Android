@@ -1,0 +1,53 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+
+    defaultConfig {
+        applicationId "com.yidian.geek"
+        minSdkVersion 19
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters "armeabi-v7a"
+        }
+
+        buildConfigField("String", "UMENG_KEY", "\"5b1503acf43e4827bf000074\"")
+        buildConfigField("String", "CHANNEL", "\"demo\"")
+        buildConfigField("String", "APP_ID", "\"YrFcmZY6dwl1c78xzgPw1Adw\"")
+        buildConfigField("String", "APP_KEY", "\"0P6ycPBdVH4llsnFie69VmV9iomaS9Aa\"")
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'   // aar目录
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    //必选项
+    implementation ("com.android.support:support-fragment:${rootProject.ext.supportVersion}")
+    implementation ("com.android.support:support-annotations:${rootProject.ext.supportVersion}")
+    implementation ("com.android.support:recyclerview-v7:${rootProject.ext.supportVersion}")
+    implementation "org.greenrobot:greendao:3.2.2"
+    implementation 'com.yidian.android:feeds:+'
+
+
+    //非必选项
+    implementation 'com.umeng.analytics:analytics:6.1.2'
+
+}

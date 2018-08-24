@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textSize="20sp"
+            android:textColor="@color/text_black"
+            android:layout_centerVertical="true" />
+
+        <Button
+            android:id="@+id/expose_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_circle_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="外部刷新"
+            android:textColor="@color/common_red_a400" />
+
+        <Button
+            android:id="@+id/btnTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_circle_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:text="主题测试"
+            android:textColor="@color/common_red_a400"
+            android:visibility="gone"/>
+
+        <Button
+            android:id="@+id/btnFont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnTheme"
+            android:background="@drawable/btn_circle_bg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_marginRight="20dp"
+            android:text="字体测试"
+            android:textColor="@color/common_red_a400"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/portal_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+</LinearLayout>
