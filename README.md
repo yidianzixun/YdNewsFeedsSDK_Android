@@ -7,10 +7,6 @@
   </a>
   <a href="https://developer.android.com/about/versions/android-4.1.html">
     <img src="https://img.shields.io/badge/API-16%2B-blue.svg?style=flat-square" alt="Min Sdk Version" />
-
-  <a href="https://www.jianshu.com/u/1d0c0bc634db">
-    <img src="https://img.shields.io/badge/Author-一点资讯Android团队-orange.svg?style=flat-square" alt="Author" />
-  </a>
   
   <a href="http://qm.qq.com/cgi-bin/qm/qr?k=W64EsNGAK6aVub49Aj0sLNlXzxb9gSjs">
     <img src="https://img.shields.io/badge/QQ群-685541331-orange.svg?style=flat-square" alt="QQ Group" />
