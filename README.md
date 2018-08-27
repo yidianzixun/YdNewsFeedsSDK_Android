@@ -15,9 +15,12 @@
 
 
 ## 阅读对象
-本文档面向所有使用一点资讯开放平台SDK的开发、测试人员等, 要求读者具有一定的Android编程开发经验，并且要求读者具备阅读wiki的习惯。
+本文档面向所有使用一点资讯开放平台SDK的开发、测试人员等, 要求读者具有一定的Android编程开发经验。
 
-![vod_1.png](http://si1.go2yd.com/get-image/0PsJ2mP3BtA)|![vod_2.png](http://si1.go2yd.com/get-image/0PsJBrEjNU8)
+<p>
+	<img src="http://si1.go2yd.com/get-image/0PsJ2mP3BtA" width="70%" height="70%"/>
+	<img src="http://si1.go2yd.com/get-image/0PsJBrEjNU8" width="70%" height="70%"/>
+</p>
 
 
 ## 1.产品概述
@@ -160,16 +163,22 @@ getSupportFragmentManager().beginTransaction()
 ```
 具体使用方式请参考：com.yidian.geek.page.NewsViewActivity
 
-### 4.4 SDK对外暴露接口
+### 4.4 SDK对外暴露方法
 SDK提供对外暴露接口或方法的方式，辅助开发者实现一些功能.
-#### 4.4.1 刷新接口
+#### 4.4.1 外部刷新方法
 
 开发者接入多频道列表或单频道列表过程中，可能需要通过点击底部Tab或者其他的方式进行信息流刷新操作，目前SDK对外暴露刷新方法来帮助开发者实现刷新操作。
 
 | 方法    | 描述|
 | :---: | :---:| 
 |public void refreshCurrentChannel()|对所处的当前频道进行刷新操作。在接入NewsPortalFragment或NewsListFragment时可以调用此Fragment的refreshCurrentChannel方法。|
+#### 4.4.2 滑动到顶部
 
+开发者可调用此方法将列表滑动到顶部
+
+| 方法    | 描述|
+| :---: | :---:| 
+|public void scrollToTopPosition()|将信息流列表滑动到顶部。在接入NewsPortalFragment或NewsListFragment时可以调用此Fragment的scrollToTopPosition方法。|
 
 ## 5.其他
 ### 5.1 声明必要权限
