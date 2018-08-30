@@ -179,6 +179,12 @@ SDK提供对外暴露接口或方法的方式，辅助开发者实现一些功�
 | 方法    | 描述|
 | :---: | :---:| 
 |public void scrollToTopPosition()|将信息流列表滑动到顶部。在接入NewsPortalFragment或NewsListFragment时可以调用此Fragment的scrollToTopPosition方法。|
+#### 4.4.3 判断当前列表是否在最顶部
+
+
+| 方法    | 描述|
+| :---: | :---:| 
+|public boolean isScrollToTopPosition()|判断当前所在位置是否在信息流最顶部。在接入NewsPortalFragment或NewsListFragment时可以调用此Fragment的isScrollToTopPosition方法。|
 
 ## 5.其他
 ### 5.1 声明必要权限
