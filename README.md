@@ -77,6 +77,8 @@ dependencies {
     implementation ("com.android.support:support-annotations:${rootProject.ext.supportVersion}")
     implementation ("com.android.support:recyclerview-v7:${rootProject.ext.supportVersion}")
     implementation "org.greenrobot:greendao:3.2.2"
+    implementation 'com.yidian.android:feeds:+'
+
 
 }
 ```
@@ -85,9 +87,7 @@ dependencies {
 ``` gradle
 ext {
     supportVersion = "26.1.0"
-    compileSdkVersion = 26
-    buildToolsVersion = "26.1.0"
-    targetSdkVersion = 26
+    
 }
 ```
 
