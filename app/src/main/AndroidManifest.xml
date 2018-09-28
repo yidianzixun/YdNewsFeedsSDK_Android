@@ -30,7 +30,8 @@
         <activity android:name=".page.NewsViewActivity"
             android:configChanges="orientation|screenSize"
             android:screenOrientation="portrait" />
-        <activity android:name=".page.VideoTestActivity" />
+        <activity android:name=".page.ScrollViewActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light"/>
     </application>
 
 </manifest>

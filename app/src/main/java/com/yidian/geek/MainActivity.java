@@ -9,6 +9,7 @@ import com.umeng.analytics.MobclickAgent;
 import com.yidian.geek.page.NewsListAcitvity;
 import com.yidian.geek.page.NewsPortalActivity;
 import com.yidian.geek.page.NewsViewActivity;
+import com.yidian.geek.page.ScrollViewActivity;
 
 
 public class MainActivity extends Activity implements View.OnClickListener {
@@ -22,6 +23,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
         findViewById(R.id.protal_test).setOnClickListener(this);
         findViewById(R.id.list_test).setOnClickListener(this);
         findViewById(R.id.view_test).setOnClickListener(this);
+        findViewById(R.id.scrollview_test).setOnClickListener(this);
 
     }
 
@@ -50,6 +52,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.view_test:
                 intent.setClass(this, NewsViewActivity.class);
+                break;
+            case R.id.scrollview_test:
+                intent.setClass(this, ScrollViewActivity.class);
                 break;
             default:
                 break;
