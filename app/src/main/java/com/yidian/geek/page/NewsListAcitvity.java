@@ -29,7 +29,8 @@ public class NewsListAcitvity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
 
-        fragment = NewsListFragment.newInstance("推荐");
+        //单列表如果是在ViewPager中的话，请将第二个参数置为true
+        fragment = NewsListFragment.newInstance("推荐", false);
 
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.portal_container, fragment)
