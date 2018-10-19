@@ -1,8 +1,8 @@
 # 一点资讯开放平台SDK-Android
 
 <p align="center">
-   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.0.4/">
-    <img src="https://img.shields.io/badge/Jcenter-v1.0.4-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
+   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.0.5/">
+    <img src="https://img.shields.io/badge/Jcenter-v1.0.5-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
 
   </a>
   <a href="https://developer.android.com/about/versions/android-4.1.html">
@@ -137,15 +137,22 @@ getSupportFragmentManager().beginTransaction()
 **NewsListFragment**
 
 NewsListFragment为单列表的Fragment，接入方式示例具体参考：com.yidian.geek.page. NewsListActivity
-NewsListFragment支持展示自定义的频道列表，接入方需要在构造NewsListFragment传入需要配置的频道名称，如：
+NewsListFragment支持展示自定义的频道列表，接入方需要在构造NewsListFragment传入需要配置的频道名称及是ViewPager中接入，如：
 
 ``` java
-fragment = NewsListFragment.newInstance("视频集锦");
+fragment = NewsListFragment.newInstance("视频集锦", false);
 getSupportFragmentManager().beginTransaction()
         .replace(R.id.portal_container, fragment)
         .commitNowAllowingStateLoss();
 
 ```
+NewsListFragment.newInstance(String channelName, boolean inViewPager)参数含义：
+
+
+| 参数    | 描述|
+| :---: | :---:| 
+|String channelName|频道名称|
+|boolean inViewPager|NewsListFragment是否是在ViewPager中集成，如集成在ViewPager,传入true，否则传入false|
 
 ### 4.3 View的形式接入
 
