@@ -82,14 +82,7 @@ dependencies {
 
 }
 ```
-**备注**：上面依赖所需的rootProject.ext.supportVersion可以由工程目录的build.gradle来配置。，如在主工程的build.gradle中这样配置：
-
-``` gradle
-ext {
-    supportVersion = "26.1.0"
-    
-}
-```
+**备注**：开放平台SDK一直在更新迭代，为了稳定性及新特性，请开发者依赖最新版本，查看各个版本更新信息请点击[版本更新记录](https://github.com/yidianzixun/YdNewsFeedsSDK_Android/releases/)
 
 ### 3.2 使用方法
 com.yidian.newssdk.NewsFeedsSDK.java 这是SDK的配置入口类，目前对外提供了响应的配置方法，开发者可以通过配置
@@ -154,6 +147,22 @@ NewsListFragment.newInstance(String channelName, boolean inViewPager)参数含�
 |String channelName|频道名称|
 |boolean inViewPager|NewsListFragment是否是在ViewPager中集成，如集成在ViewPager,传入true，否则传入false|
 
+注意事项：
+
+在使用NewsListFragment单列表接入的情况下，如果是接入在ViewPager中的话，需要注意：
+
+1、NewsListFragment.newInstance方法的第二个参数需要设置成true，否则会出现一些问题
+
+2、如果接入方式是采用接入方自己的Fragment包装了NewsListFragment的话，需要在接入方的包装的Fragment的setUserVisibleHint方法中调用下NewsListFragment的setUserVisibleHint方法，不然和1一样会出现一些问题，如：
+
+``` java
+    @Override
+    public void setUserVisibleHint(boolean isVisibleToUser) {
+        super.setUserVisibleHint(isVisibleToUser);
+        newlistFragment.setUserVisibleHint(isVisibleToUser);
+    }
+```
+
 ### 4.3 View的形式接入
 
 **NewsEmbedFragment**
@@ -192,6 +201,21 @@ SDK提供对外暴露接口或方法的方式，辅助开发者实现一些功�
 | 方法    | 描述|
 | :---: | :---:| 
 |public boolean isScrollToTopPosition()|判断当前所在位置是否在信息流最顶部。在接入NewsPortalFragment或NewsListFragment时可以调用此Fragment的isScrollToTopPosition方法。|
+
+#### 4.4.4 多频道接入时，切换频道回调频道名信息
+
+考虑到在使用NewsPortalFragment多频道接入方式时，接入方可能需要切换频道时的频道名信息，以便数据统计使用。SDK提供了接口调用来支持接入方完成此操作，接入代码如下：
+
+
+``` java
+   NewsFeedsSDK.getInstance().setReportInterface(new IReportInterface() {
+
+            @Override
+            public void onPageSelected(String channelPageName) {
+                Toast.makeText(getApplicationContext(), channelPageName, Toast.LENGTH_SHORT).show();
+            }
+        });
+```
 
 ## 5.其他
 ### 5.1 声明必要权限
