@@ -28,7 +28,7 @@
 一点资讯开放平台Android SDK是一点资讯Android开发团队推出的Android平台上的个性化信息流推荐开发集成包(SDK)，为Android开发者提供简单、快捷的接口，帮助开发者实现Android平台上的个性化信息流产品。
 
 ### 1.1 Demo
-下载地址：[点击下载](https://download.yidianzixun.com/android/geek-demo1.0.4_364dd5d.apk)
+下载地址：[点击下载](https://download.yidianzixun.com/android/geek-demo1.0.5_82b0cc4.apk)
 
 
 ## 2.SDK 功能说明
