@@ -1,8 +1,8 @@
 # 一点资讯开放平台SDK-Android
 
 <p align="center">
-   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.0.5/">
-    <img src="https://img.shields.io/badge/Jcenter-v1.0.5-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
+   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.0.6/">
+    <img src="https://img.shields.io/badge/Jcenter-v1.0.6-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
 
   </a>
   <a href="https://developer.android.com/about/versions/android-4.1.html">

@@ -8,7 +8,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="@color/white"
+        android:background="@color/ydsdk_white"
         android:paddingLeft="12dp">
 
         <TextView
@@ -17,7 +17,7 @@
             android:layout_gravity="center_vertical"
             android:text="@string/app_name"
             android:textSize="20sp"
-            android:textColor="@color/text_black"
+            android:textColor="@color/ydsdk_text_black"
             android:layout_centerVertical="true" />
 
         <Button
@@ -44,8 +44,8 @@
         android:text="your view1"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="@color/text_white"
-        android:background="@color/text_grey"
+        android:textColor="@color/ydsdk_text_white"
+        android:background="@color/ydsdk_text_grey"
         android:textStyle="bold" />
 
     <FrameLayout
@@ -61,8 +61,8 @@
         android:text="your view2"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="@color/text_white"
-        android:background="@color/text_grey"
+        android:textColor="@color/ydsdk_text_white"
+        android:background="@color/ydsdk_text_grey"
         android:textStyle="bold" />
 
 </LinearLayout>
