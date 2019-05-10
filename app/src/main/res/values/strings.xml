@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">一点资讯开放平台SDK</string>
+    <string name="hello_blank_fragment">接入方的Fragment</string>
+
 </resources>

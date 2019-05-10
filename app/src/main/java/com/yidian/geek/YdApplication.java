@@ -2,17 +2,13 @@ package com.yidian.geek;
 
 import android.app.Application;
 import android.content.Context;
-import android.content.Intent;
-import android.os.Bundle;
+import android.util.Log;
 
 import com.umeng.analytics.MobclickAgent;
-//import com.yidian.geek.custom.YdMediaIjkplayer;
 import com.yidian.newssdk.NewsFeedsSDK;
-import com.yidian.newssdk.YdCustomConfigure;
 import com.yidian.newssdk.export.IReportInterface;
-import com.yidian.newssdk.export.IShareInterface;
 
-import java.util.Map;
+//import com.yidian.geek.custom.YdMediaIjkplayer;
 
 /**
  * Created by chenyichang on 2018/5/18.
@@ -42,6 +38,8 @@ public class YdApplication extends Application {
         MobclickAgent.setDebugMode(BuildConfig.DEBUG);
         MobclickAgent.openActivityDurationTrack(false);  //禁止默认的页面统计
 
+        initLeakCanary();
+
         /**
          * 初始化SDK
          */
@@ -51,6 +49,23 @@ public class YdApplication extends Application {
                 .setContext(getApplicationContext())
                 .setDebugEnabled(BuildConfig.DEBUG)
                 .build();
+
+        NewsFeedsSDK.getInstance().setReportInterface(new IReportInterface() {
+
+            @Override
+            public void onPageSelected(String channelPageName) {
+                Log.d(TAG, channelPageName);
+            }
+        });
+
     }
 
+    private void initLeakCanary() {
+//        if (LeakCanary.isInAnalyzerProcess(this)) {
+//            // This process is dedicated to LeakCanary for heap analysis.
+//            // You should not init your app in this process.
+//            return;
+//        }
+//        LeakCanary.install(this);
+    }
 }

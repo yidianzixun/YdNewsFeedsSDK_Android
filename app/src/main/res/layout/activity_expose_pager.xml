@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yidian.geek.page.ExposePagerActivity">
+
+
+    <com.yidian.newssdk.libraries.flyco.SlidingTabLayout
+        android:id="@+id/sliding_tab"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="4dp"
+        android:background="@color/ydsdk_live_panel_bg"
+        tl:tl_divider_color="@color/ydsdk_live_panel_bg"
+        tl:tl_indicator_color="@color/ydsdk_indicator_color"
+        tl:tl_indicator_height="2dp"
+        tl:tl_indicator_margin_bottom="5dp"
+        tl:tl_indicator_width_equal_title="true"
+        tl:tl_tab_padding="10dp"
+        tl:tl_tab_space_equal="false"
+        tl:tl_textBold="NONE"
+        tl:tl_textsize="16sp"
+        tl:tl_textSelectColor="@color/ydsdk_textSelectColor"
+        tl:tl_textUnselectColor="@color/ydsdk_textUnselectColor" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_expose"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

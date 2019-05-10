@@ -32,6 +32,9 @@
             android:screenOrientation="portrait" />
         <activity android:name=".page.ScrollViewActivity"
             android:theme="@style/Base.Theme.AppCompat.Light"/>
+        <activity android:name=".page.CustomThemeNewsPortalActivity" />
+        <activity android:name=".page.CustomThemeNewsPortalActivity2" />
+        <activity android:name=".page.ExposePagerActivity" />
     </application>
 
 </manifest>

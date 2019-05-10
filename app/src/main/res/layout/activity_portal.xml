@@ -29,53 +29,38 @@
             android:layout_gravity="center_horizontal"
             android:layout_centerVertical="true"
             android:background="@drawable/btn_circle_bg"
+            android:textSize="12sp"
             android:gravity="center"
             android:padding="5dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="10dp"
             android:layout_alignParentRight="true"
             android:text="外部刷新"
             android:textColor="@color/ydsdk_red_a400" />
 
-
         <Button
-            android:id="@+id/btnTheme"
+            android:id="@+id/expose_scroll2top"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textSize="12sp"
             android:layout_gravity="center_horizontal"
             android:layout_centerVertical="true"
             android:background="@drawable/btn_circle_bg"
             android:gravity="center"
             android:padding="5dp"
-            android:layout_marginRight="20dp"
-            android:layout_alignParentRight="true"
-            android:text="主题测试"
-            android:textColor="@color/ydsdk_red_a400"
-            android:visibility="gone"/>
-
-        <Button
-            android:id="@+id/btnFont"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_toLeftOf="@+id/btnTheme"
-            android:background="@drawable/btn_circle_bg"
-            android:gravity="center"
-            android:padding="5dp"
-            android:layout_marginRight="20dp"
-            android:text="字体测试"
-            android:textColor="@color/ydsdk_red_a400"
-            android:visibility="gone"/>
-
-
-
-        <View
-            android:layout_height="1px"
-            android:layout_width="match_parent"
-            android:layout_alignParentBottom="true"
-            android:background="#b8b8b8"
-            android:visibility="gone"/>
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/expose_refresh"
+            android:layout_toRightOf="@+id/title"
+            android:text="滑到顶部"
+            android:textColor="@color/ydsdk_red_a400" />
 
     </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/ydsdk_text_black"
+        android:visibility="gone"/>
 
     <FrameLayout
         android:id="@+id/portal_container"

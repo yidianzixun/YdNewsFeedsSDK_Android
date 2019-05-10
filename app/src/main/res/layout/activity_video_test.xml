@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <include layout="@layout/ydsdk_yd_item_video"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <EditText
+        android:id="@+id/video_url_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        />
+
+    <Button
+        android:id="@+id/video_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="确定"/>
+
+    <Button
+        android:id="@+id/media_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="切换播放引擎"/>
+
+    <TextView
+        android:id="@+id/current_media"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textSize="@dimen/ydsdk_sp_16"
+        android:text="当前是MediaPlayer"
+        />
+
+    <!--<Button-->
+        <!--android:id="@+id/media_reset"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:text="重置"/>-->
+
+</LinearLayout>

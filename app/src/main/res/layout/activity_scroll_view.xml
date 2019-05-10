@@ -13,7 +13,6 @@
         android:background="@null"
         app:elevation="0dp">
 
-        <!--可以再此处放着header头部，如下面在layout/user_header里放入一些布局-->
         <android.support.design.widget.CollapsingToolbarLayout
             android:id="@+id/collapsing_toolbar"
             android:layout_width="match_parent"

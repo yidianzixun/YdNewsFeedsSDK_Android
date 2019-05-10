@@ -1,8 +1,8 @@
 # 一点资讯开放平台SDK-Android
 
 <p align="center">
-   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.0.8/">
-    <img src="https://img.shields.io/badge/Jcenter-v1.0.8-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
+   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.1.0/">
+    <img src="https://img.shields.io/badge/Jcenter-v1.1.0-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
 
   </a>
   <a href="https://developer.android.com/about/versions/android-4.1.html">
@@ -15,7 +15,7 @@
 
 
 ## 阅读对象
-本文档面向所有使用一点资讯开放平台SDK的开发、测试人员等, 要求读者具有一定的Android编程开发经验。
+本文档面向所有使用一点资讯开放平台SDK的开发、测试人员等, 要求读者具有一定的Android编程开发经验，[点击查看详细wiki文档](https://github.com/yidianzixun/YdNewsFeedsSDK_Android/wiki)。
 
 <p>
 	<img src="http://si1.go2yd.com/get-image/0PsJ2mP3BtA" width="70%" height="70%"/>
@@ -28,7 +28,7 @@
 一点资讯开放平台Android SDK是一点资讯Android开发团队推出的Android平台上的个性化信息流推荐开发集成包(SDK)，为Android开发者提供简单、快捷的接口，帮助开发者实现Android平台上的个性化信息流产品。
 
 ### 1.1 Demo
-下载地址：[点击下载](https://download.yidianzixun.com/android/geek-demo1.0.6_8a22537.apk)
+下载地址：[点击下载](https://download.yidianzixun.com/android/geek-demo1.1.0_fcf243a.apk)
 
 
 ## 2.SDK 功能说明
@@ -42,6 +42,7 @@
 - [7] 卡片样式丰富，有小图、大图、组图、视频、图集卡片
 - [8] 正文页用户体验佳，侧滑返回、视频推荐、评论页应有尽有
 - [9] 强大的后台管理
+- [10] 主题换肤
 
 ## 3.SDK使用
 

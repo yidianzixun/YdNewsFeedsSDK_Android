@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.umeng.analytics.MobclickAgent;
+import com.yidian.geek.page.CustomThemeNewsPortalActivity;
+import com.yidian.geek.page.CustomThemeNewsPortalActivity2;
+import com.yidian.geek.page.ExposePagerActivity;
 import com.yidian.geek.page.NewsListAcitvity;
 import com.yidian.geek.page.NewsPortalActivity;
 import com.yidian.geek.page.NewsViewActivity;
@@ -20,10 +23,14 @@ public class MainActivity extends Activity implements View.OnClickListener {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         findViewById(R.id.protal_test).setOnClickListener(this);
         findViewById(R.id.list_test).setOnClickListener(this);
         findViewById(R.id.view_test).setOnClickListener(this);
+        findViewById(R.id.customtheme_test).setOnClickListener(this);
+        findViewById(R.id.customtheme_test2).setOnClickListener(this);
         findViewById(R.id.scrollview_test).setOnClickListener(this);
+        findViewById(R.id.viewpager_test).setOnClickListener(this);
 
     }
 
@@ -55,6 +62,15 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
             case R.id.scrollview_test:
                 intent.setClass(this, ScrollViewActivity.class);
+                break;
+            case R.id.viewpager_test:
+                intent.setClass(this, ExposePagerActivity.class);
+                break;
+            case R.id.customtheme_test:
+                intent.setClass(this, CustomThemeNewsPortalActivity.class);
+                break;
+            case R.id.customtheme_test2:
+                intent.setClass(this, CustomThemeNewsPortalActivity2.class);
                 break;
             default:
                 break;

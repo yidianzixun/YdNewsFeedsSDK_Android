@@ -20,6 +20,7 @@ import com.yidian.newssdk.theme.ThemeManager;
 public class NewsViewActivity extends FragmentActivity {
 
     private Fragment fragment;
+    private Button btnTheme;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +32,19 @@ public class NewsViewActivity extends FragmentActivity {
         getSupportFragmentManager().beginTransaction()
                 .replace(R.id.portal_container, fragment)
                 .commitNowAllowingStateLoss();
+
+        btnTheme = findViewById(R.id.btnTheme);
+        btnTheme.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (ThemeManager.getThemeId() == ThemeManager.SCENE_THEME_DEFAULT) {
+                    ThemeManager.setThemeId(ThemeManager.SCENE_THEME_NIGHT);
+                } else {
+                    ThemeManager.setThemeId(ThemeManager.SCENE_THEME_DEFAULT);
+                }
+            }
+        });
+
     }
 
     @Override

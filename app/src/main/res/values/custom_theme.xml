@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomTheme" parent="@style/ydsdk_DefaultTheme">
+        <!-- 导航栏未选中状态下字体颜色 -->
+        <item name="newssdk_slidingtab_normal_txt_color">#2c2c2c</item>
+        <!-- 导航栏选中状态下字体颜色 -->
+        <item name="newssdk_sliding_tab_checked_txt_color">#0f82fe</item>
+        <!-- 导航栏字体大小 -->
+        <item name="newssdk_slidingtab_txt_size">16sp</item>
+        <!-- 信息流整体背景 -->
+        <item name="newssdk_common_bg_color">#fafafa</item>
+        <!-- 信息流卡片字体颜色 -->
+        <item name="newssdk_common_font_color">#2c2c2c</item>
+        <!-- 信息流卡片字体大小 -->
+        <item name="newssdk_common_font_size">17sp</item>
+        <!-- 信息流卡片分割线颜色 -->
+        <item name="newssdk_card_divider_color">#d8d8d8</item>
+        <!-- 信息流卡片分割线粗细 -->
+        <item name="newssdk_card_divider_height">1px</item>
+        <!-- 信息流卡片图片背景颜色 -->
+        <item name="newssdk_card_img_bg_color">@color/ydsdk_card_img_bg</item>
+        <!-- 信息流刷新提示字体颜色 -->
+        <item name="newssdk_refresh_tip_color">#0f82fe</item>
+        <!-- 负反馈的字体颜色 -->
+        <item name="newssdk_feedback_textcolor">@drawable/badfeedback_textcolor_state</item>
+        <!-- 负反馈的字体背景 -->
+        <item name="newssdk_feedback_state">@drawable/badfeedback_state</item>
+        <!-- 负反馈的固定文案的字体颜色 -->
+        <item name="newssdk_feedback_commontxt_color">#0f82fe</item>
+        <!-- 负反馈点击后顶部弹出文案提示的背景色 -->
+        <item name="newssdk_feedback_success_tip_bg">#c75895ED</item>
+    </style>
+
+    <style name="CustomTheme2" parent="@style/ydsdk_DefaultTheme">
+        <!-- 导航栏未选中状态下字体颜色 -->
+        <item name="newssdk_slidingtab_normal_txt_color">#2c2c2c</item>
+        <!-- 导航栏选中状态下字体颜色 -->
+        <item name="newssdk_sliding_tab_checked_txt_color">#0f82fe</item>
+        <!-- 导航栏字体大小 -->
+        <item name="newssdk_slidingtab_txt_size">18sp</item>
+        <!-- 信息流整体背景 -->
+        <item name="newssdk_common_bg_color">#fafafa</item>
+        <!-- 信息流卡片字体颜色 -->
+        <item name="newssdk_common_font_color">#2c2c2c</item>
+        <!-- 信息流卡片字体大小 -->
+        <item name="newssdk_common_font_size">30sp</item>
+        <!-- 信息流卡片分割线颜色 -->
+        <item name="newssdk_card_divider_color">#0f82fe</item>
+        <!-- 信息流卡片分割线粗细 -->
+        <item name="newssdk_card_divider_height">5px</item>
+        <!-- 信息流卡片图片背景颜色 -->
+        <item name="newssdk_card_img_bg_color">@color/ydsdk_card_img_bg</item>
+        <!-- 信息流刷新提示字体颜色 -->
+        <item name="newssdk_refresh_tip_color">#0f82fe</item>
+        <!-- 负反馈的字体颜色 -->
+        <item name="newssdk_feedback_textcolor">@drawable/badfeedback_textcolor_state</item>
+        <!-- 负反馈的字体背景 -->
+        <item name="newssdk_feedback_state">@drawable/badfeedback_state</item>
+        <!-- 负反馈的固定文案的字体颜色 -->
+        <item name="newssdk_feedback_commontxt_color">#0f82fe</item>
+        <!-- 负反馈点击后顶部弹出文案提示的背景色 -->
+        <item name="newssdk_feedback_success_tip_bg">#c75895ED</item>
+    </style>
+</resources>
