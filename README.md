@@ -83,6 +83,15 @@ dependencies {
 
 }
 ```
+
+*3.添加混淆清单
+
+``` gradle
+-keep class com.yidian.newssdk.** {
+    *;
+}
+```
+
 **备注**：开放平台SDK一直在更新迭代，为了稳定性及新特性，请开发者依赖最新版本，查看各个版本更新信息请点击[版本更新记录](https://github.com/yidianzixun/YdNewsFeedsSDK_Android/releases/)
 
 ### 3.2 使用方法
@@ -229,10 +238,6 @@ SDK提供对外暴露接口或方法的方式，辅助开发者实现一些功�
     <uses-permission android:name="android.permission.VIBRATE" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 ```
-
-### 5.2 关于混淆
-
-SDK提供时已经通过consumerProguardFile 方式提供混淆文件，所以客户端不需要重新keep防止混淆
 
 ## 6.反馈与建议
 ### 6.1 反馈模板  
