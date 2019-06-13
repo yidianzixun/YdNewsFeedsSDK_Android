@@ -84,7 +84,7 @@ dependencies {
 }
 ```
 
-*3.添加混淆清单
+* 3.添加混淆
 
 ``` gradle
 -keep class com.yidian.newssdk.** {
