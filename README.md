@@ -1,8 +1,8 @@
 # 一点资讯开放平台SDK-Android
 
 <p align="center">
-   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.2.0/">
-    <img src="https://img.shields.io/badge/Jcenter-v1.2.0-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
+   <a href="https://jcenter.bintray.com/com/yidian/android/feeds/1.2.1/">
+    <img src="https://img.shields.io/badge/Jcenter-v1.2.1-brightgreen.svg?style=flat-square" alt="Latest Stable Version" />
 
   </a>
   <a href="https://developer.android.com/about/versions/android-4.1.html">
@@ -28,7 +28,7 @@
 一点资讯开放平台Android SDK是一点资讯Android开发团队推出的Android平台上的个性化信息流推荐开发集成包(SDK)，为Android开发者提供简单、快捷的接口，帮助开发者实现Android平台上的个性化信息流产品。
 
 ### 1.1 Demo
-下载地址：[点击下载](https://download.yidianzixun.com/android/geek-demo1.1.0_fcf243a.apk)
+下载地址：[点击下载](https://download.yidianzixun.com/android/x/geek-demo1.2.1_2f8d5b9.apk)
 
 
 ## 2.SDK 功能说明
